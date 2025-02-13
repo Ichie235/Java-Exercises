@@ -1,6 +1,9 @@
 package structure;
 
 import bank.BankAccount;
+import footballtournament.Match;
+import footballtournament.Player;
+import footballtournament.Team;
 import inventory.Inventory;
 import inventory.Product;
 import inventory.Warehouse;
@@ -42,20 +45,40 @@ public class Main {
         Student student = new Student();
         student.studentId = 12329;
         student.name = "ichie chinemerem richard";
-        System.out.println("Student ID: " + student.studentId );
+        System.out.println("Student ID: " + student.studentId);
         System.out.println("Student name: " + student.name);
 
         Course course = new Course();
         course.courseId = 2235;
         course.courseName = "Bio 101";
-        System.out.println("Course ID: " +  course.courseId );
+        System.out.println("Course ID: " + course.courseId);
         System.out.println("Student name: " + course.courseName);
 
         Enrollment enrollment = new Enrollment();
         enrollment.course = course;
         enrollment.student = student;
-        System.out.println("Enrollment course: " +  enrollment.course.courseId );
+        System.out.println("Enrollment course: " + enrollment.course.courseId);
         System.out.println("Enrollment student: " + enrollment.student.name);
-        
+
+        // Exercise: Football Tournament
+        Team team1 = new Team();
+        Team team2 = new Team();
+        team1.name = "Barca";
+        team1.players = "messi";
+        team2.name = "Real-mardrid";
+        team2.players = "Rolnado";
+
+        Player player = new Player();
+        player.name = "messi";
+        player.position = "mid-field";
+        player.age = 37;
+        player.team = team1;
+
+        Match match = new Match();
+        match.team1 = team1;
+        match.team2 = team2;
+        match.score1 = 2;
+        match.score2 = 2;
+        match.winner = team2;
     }
 }
