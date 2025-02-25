@@ -1,4 +1,4 @@
-package structure;
+package arithemeticExercise;
 
 public class AddFloatingPointNumbers {
     public static void main(String[] args) {

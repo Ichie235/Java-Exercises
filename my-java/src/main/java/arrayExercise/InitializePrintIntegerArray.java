@@ -1,4 +1,4 @@
-package structure;
+package arrayExercise;
 
 public class InitializePrintIntegerArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package structure;
+package stringExercise;
 
 public class FindLengthOfString {
 

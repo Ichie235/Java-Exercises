@@ -1,4 +1,4 @@
-package structure;
+package stringExercise;
 
 public class ConcatenateTwoStrings {
     public static void main(String[] args) {
