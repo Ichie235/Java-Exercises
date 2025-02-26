@@ -7,9 +7,12 @@ import footballtournament.Team;
 import inventory.Inventory;
 import inventory.Product;
 import inventory.Warehouse;
+import methodExercise.Calculator;
 import university.Course;
 import university.Enrollment;
 import university.Student;
+
+import static methodExercise.Calculator.add;
 
 public class Main {
     public static void main(String[] args) {
@@ -80,5 +83,15 @@ public class Main {
         match.score1 = 2;
         match.score2 = 2;
         match.winner = team2;
+
+        //Call calculator method
+        int addition = Calculator.add(3,5);
+        System.out.println("This is addition: " + addition);
+
+        int subtraction = Calculator.subract(3,5);
+        System.out.println("This is subtraction: " + subtraction);
+
+        int multiplication = Calculator.multiply(3,5);
+        System.out.println("This is multiplication: " + multiplication);
     }
 }

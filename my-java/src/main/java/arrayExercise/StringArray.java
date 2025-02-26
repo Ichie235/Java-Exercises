@@ -7,6 +7,5 @@ public class StringArray {
         System.out.println("Result of string array: " + stringArray[0]);
         System.out.println("Result of string array: " + stringArray[1]);
         System.out.println("Result of string array: " + stringArray[2]);
-        System.out.println("Result of string array: " + stringArray[3]);
     }
 }
