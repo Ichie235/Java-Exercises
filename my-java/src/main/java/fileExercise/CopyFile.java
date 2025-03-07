@@ -15,13 +15,13 @@ public class CopyFile {
                 writeToFile.write(character);
             }
         } catch (IOException e) {
-            System.out.println("Error occured while copying file: " + e.getMessage());
+            System.out.println("Error occurred while copying file: " + e.getMessage());
         }
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        String sourcePath = "";
-        String destinationPath = "";
+        String sourcePath = "my_text.txt";
+        String destinationPath = "your_text.txt";
         try{
             CopyFile.copyFile(sourcePath,destinationPath);
         } catch (Exception e) {
